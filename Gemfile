@@ -51,6 +51,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false, group: :test
+  gem 'capybara'
 end
 
 group :development do
