@@ -8,7 +8,7 @@ describe TasteDiveService do
         VCR.use_cassette("taste_dive_service_recommendations") do
           tds = TasteDiveService.new(search_params)
 
-          recommendations = tds.recommendations(search_params)
+          recommendations = tds.raw_recommendations(search_params)
           original_query_param = recommendations[:Similar][:Info].first
           recommendation = recommendations[:Similar][:Results].first
 
