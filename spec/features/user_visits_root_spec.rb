@@ -17,6 +17,9 @@ describe "user visits root path" do
       click_on "Search"
 
       expect(current_path).to eq(recommendations_path)
+      within('.reco-recommends') do
+        expect(page).to have_content("Reco Recommends:")
+      end
     end
   end
 end
