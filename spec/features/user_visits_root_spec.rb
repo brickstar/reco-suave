@@ -5,8 +5,8 @@ describe "user visits root path" do
     it "should have a placeholder of 'Bands, Movies, TV Shows, Authors, or Games...'" do
       visit '/'
 
-      expect(page).to have_field('Recommendation')
-      expect(page).to have_content('Bands, Movies, TV Shows, Authors, or Games...')
+      expect(page).to have_field('Recommendations:')
+      expect(page).to have_xpath("//input[@value='Bands, Movies, TV Shows, Authors, or Games...']")
     end
   end
 end
