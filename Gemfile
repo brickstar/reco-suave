@@ -33,13 +33,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'pry-rails'
+gem 'pry'
 gem 'faraday'
 gem 'figaro'
 gem 'newrelic_rpm'
 gem 'sidekiq'
-
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,7 +49,6 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false, group: :test
-  gem 'capybara'
 end
 
 group :development do
@@ -62,7 +59,7 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
-  gem 'rspec-sidekiq'
+  # gem 'rspec-sidekiq'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
