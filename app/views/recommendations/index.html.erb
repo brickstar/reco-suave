@@ -1,0 +1,15 @@
+<h1 class="reco-recommends">Reco Recommends: </h1>
+<div class="recos">
+  <% if !@recommendations.empty? %>
+    <% @recommendations.each do |reco| %>
+      Artist: <%= reco.name %><br>
+      Reco Type: <%= reco.type %><br>
+      Wiki Teaser: <%= reco.wiki_teaser %><br>
+      <%= link_to "wiki page", reco.wiki_url %><br>
+      <iframe src='https://www.youtube.com/embed/<%= reco.youtube_id %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe><br>
+    <% end %>
+  <% else %>
+    <p>Returned Nothing</p>
+  <% end %>
+</div>
+<%= link_to "make another search", root_path %>

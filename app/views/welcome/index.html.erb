@@ -1,0 +1,5 @@
+<%= form_tag("/recommendations", method: "get") do %>
+  <%= label_tag(:q, "Recommendations: ") %>
+  <%= text_field_tag(:q, "Bands, Movies, TV Shows, Authors, or Games...", id: "recommendation-input-field") %>
+  <%= submit_tag("Search") %>
+<% end %>
