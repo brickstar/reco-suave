@@ -20,6 +20,10 @@ describe "user visits root path" do
       within('.reco-recommends') do
         expect(page).to have_content("Reco Recommends:")
       end
+      expect(page).to have_content("Artist:")
+      expect(page).to have_content("Reco Type:")
+      expect(page).to have_content("Wiki Teaser:")
+      expect(page).to have_link("wiki page")
     end
   end
 end
