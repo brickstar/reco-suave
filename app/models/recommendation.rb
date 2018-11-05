@@ -6,6 +6,6 @@ class Recommendation
     @wiki_teaser = attrs[:wTeaser]
     @wiki_url = attrs[:wUrl]
     @youtube_url = attrs[:yUrl]
-    @youtube_id = attrs[:yId]
+    @youtube_id = attrs[:yID]
   end
 end

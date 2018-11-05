@@ -4,12 +4,12 @@ describe Recommendation do
   context ".new(attrs)" do
     it "exists with valid attributes" do
       valid_attrs = {
-        :name=>"Beatles",
-        :type=>"music",
-        :wiki_teaser=>"lots of text",
-        :wiki_url=>"www.wikiexample.com",
-        :youtube_url=>"www.youtubeexample.com",
-        :youtube_id=>"123456"
+        :Name=>"Beatles",
+        :Type=>"music",
+        :wTeaser=>"lots of text",
+        :wUrl=>"www.wikiexample.com",
+        :yUrl=>"www.youtubeexample.com",
+        :yID=>"123456"
       }
 
       recommendation = Recommendation.new(valid_attrs)
