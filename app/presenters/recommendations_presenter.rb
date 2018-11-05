@@ -5,7 +5,7 @@ class RecommendationsPresenter
   end
 
   def recommendations
-    recos = @service.raw_recommendations(@params)[:Similar][:Results].map do |reco|
+    @service.raw_recommendations(@params)[:Similar][:Results].map do |reco|
       Recommendation.new(reco)
     end
   end
