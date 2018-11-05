@@ -1,5 +1,6 @@
 class RecommendationsController < ApplicationController
   def index
-    @presenter = RecommendationsPresenter.new(params[:q])
+    @recommendations = RecommendationsPresenter.new(params[:q]).recommendations
+    binding.pry
   end
 end

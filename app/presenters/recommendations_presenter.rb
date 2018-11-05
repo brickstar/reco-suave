@@ -5,8 +5,8 @@ class RecommendationsPresenter
   end
 
   def recommendations
-    @service.raw_recommendations(@params)[:Similar][:Results].map do |reco|
-      Recommendation.new(name = reco[:Name], type = reco[:Type], wiki_teaser = reco[:wTeaser], wiki_url = reco[:wUrl], youtube_url = reco[:yUrl], youtube_clip_id = reco[:yID])
+    recos = @service.raw_recommendations(@params)[:Similar][:Results].map do |reco|
+      Recommendation.new(reco)
     end
   end
 end
