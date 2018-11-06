@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://tastedive.com/api/similar?k=322826-RecoSuav-PA13QF0T&limit=10&q=Beatles&verbose=1
+    uri: https://tastedive.com/api/similar?k=322826-RecoSuav-PA13QF0T&q=Beatles&verbose=1
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 04 Nov 2018 23:00:34 GMT
+      - Tue, 06 Nov 2018 07:29:08 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,14 +27,14 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d8360c8fc7ae7243fef886ed3b55d02531541372434; expires=Mon, 04-Nov-19
-        23:00:34 GMT; path=/; domain=.tastedive.com; HttpOnly
+      - __cfduid=d91d29ebee8f0acc6fdac2bface8784781541489348; expires=Wed, 06-Nov-19
+        07:29:08 GMT; path=/; domain=.tastedive.com; HttpOnly
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 474ab2935b859402-SJC
+      - 4755d8eb99e093c6-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Similar": {"Info": [{"Name": "The Beatles", "Type": "music", "wTeaser":
@@ -62,6 +62,25 @@ http_interactions:
         My Guitar Gently Weeps\", \"Here Comes the Sun\" and \"Something\", the last
         of which became the Beatles'' second-most covered song.\n", "wUrl": "http://en.wikipedia.org/wiki/George_Harrisson",
         "yUrl": "https://www.youtube-nocookie.com/embed/8qJTJNfzvr8", "yID": "8qJTJNfzvr8"},
+        {"Name": "John Lennon", "Type": "music", "wTeaser": "\n\nJohn Winston Ono
+        Lennon  (9 October 1940\u00a0\u2013\u00a08 December 1980) was an English singer,
+        songwriter, and peace activist who co-founded the Beatles, the most commercially
+        successful band in the history of popular music. He and fellow member Paul
+        McCartney formed a much-celebrated songwriting partnership. Along with George
+        Harrison and Ringo Starr, the group would ascend to worldwide fame during
+        the 1960s.\nHe was born as John Winston Lennon in Liverpool, where he became
+        involved in the skiffle craze as a teenager. In 1957, he formed his first
+        band, the Quarrymen, which evolved into the Beatles in 1960. Lennon began
+        to record as a solo artist before the band''s break-up in April 1970; two
+        of those songs were \"Give Peace a Chance\" and \"Instant Karma!\" Lennon
+        subsequently produced albums that included John Lennon/Plastic Ono Band and
+        Imagine, and songs such as  \"Working Class Hero\", \"Imagine\" and \"Happy
+        Xmas (War Is Over)\". After he married Yoko Ono in 1969, he added \"Ono\"
+        as one of his middle names. Lennon disengaged himself from the music business
+        in 1975 to raise his infant son Sean, but re-emerged with Ono in 1980 with
+        the album Double Fantasy. He was shot and killed in the archway of his Manhattan
+        apartment building three weeks after the album was released.\n", "wUrl": "http://en.wikipedia.org/wiki/John_Lenon",
+        "yUrl": "https://www.youtube-nocookie.com/embed/YkgkThdzX-8", "yID": "YkgkThdzX-8"},
         {"Name": "Paul McCartney", "Type": "music", "wTeaser": "\n\n\nSir James Paul
         McCartney  (born 18 June 1942) is an English singer-songwriter, multi-instrumentalist,
         and composer. He gained worldwide fame as the bass guitarist and singer for
@@ -144,25 +163,6 @@ http_interactions:
         (1967\u20131982), Ian McLagan (1978\u20131981), Billy Preston (through the
         mid-1970s) and Chuck Leavell (1982\u2013present).\n", "wUrl": "http://en.wikipedia.org/wiki/The_Rolling_Stones",
         "yUrl": "https://www.youtube-nocookie.com/embed/O4irXQhgMqg", "yID": "O4irXQhgMqg"},
-        {"Name": "John Lennon", "Type": "music", "wTeaser": "\n\nJohn Winston Ono
-        Lennon  (9 October 1940\u00a0\u2013\u00a08 December 1980) was an English singer,
-        songwriter, and peace activist who co-founded the Beatles, the most commercially
-        successful band in the history of popular music. He and fellow member Paul
-        McCartney formed a much-celebrated songwriting partnership. Along with George
-        Harrison and Ringo Starr, the group would ascend to worldwide fame during
-        the 1960s.\nHe was born as John Winston Lennon in Liverpool, where he became
-        involved in the skiffle craze as a teenager. In 1957, he formed his first
-        band, the Quarrymen, which evolved into the Beatles in 1960. Lennon began
-        to record as a solo artist before the band''s break-up in April 1970; two
-        of those songs were \"Give Peace a Chance\" and \"Instant Karma!\" Lennon
-        subsequently produced albums that included John Lennon/Plastic Ono Band and
-        Imagine, and songs such as  \"Working Class Hero\", \"Imagine\" and \"Happy
-        Xmas (War Is Over)\". After he married Yoko Ono in 1969, he added \"Ono\"
-        as one of his middle names. Lennon disengaged himself from the music business
-        in 1975 to raise his infant son Sean, but re-emerged with Ono in 1980 with
-        the album Double Fantasy. He was shot and killed in the archway of his Manhattan
-        apartment building three weeks after the album was released.\n", "wUrl": "http://en.wikipedia.org/wiki/John_Lenon",
-        "yUrl": "https://www.youtube-nocookie.com/embed/YkgkThdzX-8", "yID": "YkgkThdzX-8"},
         {"Name": "The Kinks", "Type": "music", "wTeaser": "\n\nThe Kinks are an English
         rock band formed in Muswell Hill, North London, in 1964 by brothers Ray and
         Dave Davies. They are regarded as one of the most important and influential
@@ -213,18 +213,192 @@ http_interactions:
         fans of the American folk music revival, recording a six-minute single, \"Like
         a Rolling Stone,\" which enlarged the scope of popular music.\n", "wUrl":
         "http://en.wikipedia.org/wiki/Bob_Dylan", "yUrl": "https://www.youtube-nocookie.com/embed/IwOfCgkyEj0",
-        "yID": "IwOfCgkyEj0"}, {"Name": "The Doors", "Type": "music", "wTeaser": "\nThe
-        Doors were an American rock band formed in Los Angeles in 1965, with vocalist
-        Jim Morrison, keyboardist Ray Manzarek, guitarist Robby Krieger, and drummer
-        John Densmore. The band got its name, at Morrison''s suggestion from the title
-        of Aldous Huxley''s book The Doors of Perception, which itself was a reference
-        to a quote made by William Blake, \"If the doors of perception were cleansed,
-        everything would appear to man as it is, infinite.\" They were unique and
-        among the most controversial and influential rock acts of the 1960s, mostly
-        because of Morrison''s lyrics and charismatic but unpredictable stage persona.
-        After Morrison''s death in 1971, the remaining members continued as a trio
-        until disbanding in 1973.", "wUrl": "https://en.wikipedia.org/wiki/The_Doors",
-        "yUrl": "https://www.youtube-nocookie.com/embed/deB_u-to-IE", "yID": "deB_u-to-IE"}]}}'
+        "yID": "IwOfCgkyEj0"}, {"Name": "Simon And Garfunkel", "Type": "music", "wTeaser":
+        "\nSimon & Garfunkel were an American folk rock duo consisting of singer-songwriter
+        Paul Simon and singer Art Garfunkel. They were one of the bestselling music
+        groups of the 1960s and became counterculture icons of the decade''s social
+        revolution, alongside artists such as the Beatles, the Beach Boys, and Bob
+        Dylan. Their biggest hits\u2014including \"The Sound of Silence\" (1964),
+        \"Mrs. Robinson\" (1968), \"The Boxer\" (1969), and \"Bridge over Troubled
+        Water\" (1970)\u2014reached number one on singles charts worldwide.\nThe duo
+        met in elementary school in Queens, New York, in 1953, where they learned
+        to harmonize together and began writing original material. By 1957, under
+        the name Tom & Jerry, the teenagers had their first minor success with \"Hey
+        Schoolgirl\", a song imitating their idols The Everly Brothers.  In 1963,
+        aware of a growing public interest in folk music, they regrouped and were
+        signed to Columbia Records as Simon & Garfunkel. Their debut, Wednesday Morning,
+        3 A.M., sold poorly, and they once again disbanded; Simon returned to a solo
+        career, this time in England. In June 1965, a new version of \"The Sound of
+        Silence\", overdubbed with electric guitar and drums, became a major U.S.
+        AM radio hit in 1965, reaching number one on the Billboard Hot 100. They reunited
+        to release a second studio album, Sounds of Silence, and tour colleges nationwide.
+        On their third release, Parsley, Sage, Rosemary and Thyme (1966), the duo
+        assumed more creative control. Their music was featured in the 1967 film The
+        Graduate, giving them further exposure. Bookends (1968), their next album,
+        topped the Billboard 200 chart and included the number-one single \"Mrs. Robinson\"
+        from the film.\n", "wUrl": "http://en.wikipedia.org/wiki/Simon_%26_Garfunkel",
+        "yUrl": "https://www.youtube-nocookie.com/embed/SACeGmvxE1A", "yID": "SACeGmvxE1A"},
+        {"Name": "The Doors", "Type": "music", "wTeaser": "\nThe Doors were an American
+        rock band formed in Los Angeles in 1965, with vocalist Jim Morrison, keyboardist
+        Ray Manzarek, guitarist Robby Krieger, and drummer John Densmore. The band
+        got its name, at Morrison''s suggestion from the title of Aldous Huxley''s
+        book The Doors of Perception, which itself was a reference to a quote made
+        by William Blake, \"If the doors of perception were cleansed, everything would
+        appear to man as it is, infinite.\" They were unique and among the most controversial
+        and influential rock acts of the 1960s, mostly because of Morrison''s lyrics
+        and charismatic but unpredictable stage persona. After Morrison''s death in
+        1971, the remaining members continued as a trio until disbanding in 1973.",
+        "wUrl": "https://en.wikipedia.org/wiki/The_Doors", "yUrl": "https://www.youtube-nocookie.com/embed/deB_u-to-IE",
+        "yID": "deB_u-to-IE"}, {"Name": "Queen", "Type": "music", "wTeaser": "\n\n\nQueen
+        are a British rock band that formed in London in 1970. Their classic line-up
+        was Freddie Mercury (lead vocals, piano), Brian May (lead guitar, vocals),
+        Roger Taylor (drums, vocals), and John Deacon (bass guitar). Queen''s earliest
+        works were influenced by progressive rock, hard rock and heavy metal, but
+        the band gradually ventured into more conventional and radio-friendly works
+        by incorporating further styles, such as arena rock and pop rock, into their
+        music.\nBefore forming Queen, Brian May and Roger Taylor had played together
+        in Smile. Mercury, then known by his birth name, Farrokh \"Freddie\" Bulsara,
+        was a fan of Smile and encouraged them to experiment with more elaborate stage
+        and recording techniques. Mercury joined in 1970, suggested the name \"Queen\",
+        and adopted his familiar stage name. Deacon was recruited before the band
+        recorded their eponymous debut album in 1973. Queen first charted in the UK
+        with their second album, Queen II, in 1974, but it was the release of Sheer
+        Heart Attack later that year and A Night at the Opera in 1975 which brought
+        them international success. The latter featured \"Bohemian Rhapsody\", which
+        stayed at number one in the UK for nine weeks and also helped to popularise
+        the music video.\n", "wUrl": "http://en.wikipedia.org/wiki/Queen_(music)",
+        "yUrl": "https://www.youtube-nocookie.com/embed/fJ9rUzIMcZQ", "yID": "fJ9rUzIMcZQ"},
+        {"Name": "Elton John", "Type": "music", "wTeaser": "\n\n\nSir Elton Hercules
+        John  (born Reginald Kenneth Dwight, 25 March 1947) is an English singer,
+        pianist, and composer. He has worked with lyricist Bernie Taupin as his songwriting
+        partner since 1967; they have collaborated on more than 30 albums to date.
+        In his five-decade career Elton John has sold more than 300\u00a0million records,
+        making him one of the best-selling music artists in the world. He has more
+        than fifty Top 40 hits, including seven consecutive No. 1 US albums, 58 Billboard
+        Top 40 singles, 27 Top 10, four No. 2 and nine No. 1. For 31 consecutive years
+        (1970\u20132000) he had at least one song in the Billboard Hot 100. His tribute
+        single \"Candle in the Wind 1997\", rewritten in dedication to Diana, Princess
+        of Wales, sold over 33\u00a0million copies worldwide and is the best-selling
+        single in the history of the UK and US singles charts. He has also composed
+        music, produced records, and has occasionally acted in films. John owned Watford
+        Football Club from 1976 to 1987, and 1997 to 2002. He is an honorary Life
+        President of the club, and in 2014 had a stand named after him at the club''s
+        home stadium.\n", "wUrl": "https://en.wikipedia.org/wiki/Elton_John", "yUrl":
+        "https://www.youtube-nocookie.com/embed/YFspJQwMAyE", "yID": "YFspJQwMAyE"},
+        {"Name": "Pink Floyd", "Type": "music", "wTeaser": "\n\n\nPink Floyd were
+        an English rock band formed in London in 1965. They achieved international
+        acclaim with their progressive and psychedelic music. Distinguished by their
+        philosophical lyrics, sonic experimentation, extended compositions, and elaborate
+        live shows, they are one of the most commercially successful and influential
+        groups in popular music history.\nPink Floyd were founded by students Syd
+        Barrett on guitar and lead vocals, Nick Mason on drums, Roger Waters on bass
+        and vocals, and Richard Wright on keyboards and vocals. They gained popularity
+        performing in London''s underground music scene during the late 1960s, and
+        under Barrett''s leadership released two charting singles and a successful
+        debut album, The Piper at the Gates of Dawn (1967). Guitarist and vocalist
+        David Gilmour joined in December 1967; Barrett left in April 1968 due to deteriorating
+        mental health. Waters became the band''s primary lyricist and conceptual leader,
+        devising the concepts behind their albums The Dark Side of the Moon (1973),
+        Wish You Were Here (1975), Animals (1977), The Wall (1979) and The Final Cut
+        (1983). The Dark Side of the Moon and The Wall became two of the best-selling
+        albums of all time.\n", "wUrl": "https://en.wikipedia.org/wiki/Pink_Floyd",
+        "yUrl": "https://www.youtube-nocookie.com/embed/_FrOQC-zEog", "yID": "_FrOQC-zEog"},
+        {"Name": "Elvis Presley", "Type": "music", "wTeaser": "\n\nElvis Aaron Presley
+        (January 8, 1935\u00a0\u2013 August 16, 1977) was an American singer and actor.
+        Regarded as one of the most significant cultural icons of the 20th century,
+        he is often referred to as the \"King of Rock and Roll\" or simply the \"King\".\nPresley
+        was born in Tupelo, Mississippi, and relocated to Memphis, Tennessee, with
+        his family when he was 13 years old. His music career began there in 1954,
+        recording at Sun Records with producer Sam Phillips, who wanted to bring the
+        sound of African-American music to a wider audience. Accompanied by guitarist
+        Scotty Moore and bassist Bill Black, Presley was a pioneer of rockabilly,
+        an uptempo, backbeat-driven fusion of country music and rhythm and blues.
+        In 1955, drummer D. J. Fontana joined to complete the lineup of Presley''s
+        classic quartet and RCA Victor acquired his contract in a deal arranged by
+        Colonel Tom Parker, who would manage him for more than two decades. Presley''s
+        first RCA single, \"Heartbreak Hotel\", was released in January 1956 and became
+        a number one hit in the United States. With a series of successful network
+        television appearances and chart-topping records, he became the leading figure
+        of the newly popular sound of rock and roll. His energized interpretations
+        of songs and sexually provocative performance style, combined with a singularly
+        potent mix of influences across color lines during a transformative era in
+        race relations, made him enormously popular\u2014and controversial.\n", "wUrl":
+        "http://en.wikipedia.org/wiki/Elvis", "yUrl": "https://www.youtube-nocookie.com/embed/gj0Rz-uP4Mk",
+        "yID": "gj0Rz-uP4Mk"}, {"Name": "Led Zeppelin", "Type": "music", "wTeaser":
+        "\n\n\nLed Zeppelin were  an English rock band formed in London in 1968. The
+        group consisted of guitarist Jimmy Page, singer Robert Plant, bassist and
+        keyboardist John Paul Jones, and drummer John Bonham. The band''s heavy, guitar-driven
+        sound has led them to be cited as one of the progenitors of heavy metal. Their
+        style drew from a wide variety of influences, including blues, psychedelia,
+        and folk music.\nAfter changing their name from the New Yardbirds, Led Zeppelin
+        signed a deal with Atlantic Records that afforded them considerable artistic
+        freedom. Although the group were initially unpopular with critics, they achieved
+        significant commercial success with eight studio albums released over eleven
+        years, from Led Zeppelin (1969) to In Through the Out Door (1979). Their untitled
+        fourth studio album, commonly known as Led Zeppelin IV (1971) and featuring
+        the song \"Stairway to Heaven\", is among the most popular and influential
+        works in rock music, and it helped to secure the group''s popularity.\n",
+        "wUrl": "http://en.wikipedia.org/wiki/Led_Zeppelin_(band)", "yUrl": "https://www.youtube-nocookie.com/embed/D9ioyEvdggk",
+        "yID": "D9ioyEvdggk"}, {"Name": "Creedence Clearwater Revival", "Type": "music",
+        "wTeaser": "\nCreedence Clearwater Revival (often referred to as Creedence
+        or CCR) was an American rock band active in the late 1960s and early 1970s
+        which consisted of lead vocalist, lead guitarist, and primary songwriter John
+        Fogerty, his brother rhythm guitarist Tom Fogerty, bassist Stu Cook, and drummer
+        Doug Clifford. These members had played together since 1959, first as The
+        Blue Velvets, then as The Golliwogs. Their musical style encompassed roots
+        rock, swamp rock, and blues rock. They played in a Southern rock style, despite
+        their San Francisco Bay Area origin, with lyrics about bayous, catfish, the
+        Mississippi River, and other popular elements of Southern United States iconography,
+        as well as political and socially conscious lyrics about topics including
+        the Vietnam War. The band performed at the 1969 Woodstock Festival in Upstate
+        New York.\n", "wUrl": "http://en.wikipedia.org/wiki/Creedence_Clear_Water_Revival",
+        "yUrl": "https://www.youtube-nocookie.com/embed/Gu2pVPWGYMQ", "yID": "Gu2pVPWGYMQ"},
+        {"Name": "The Jimi Hendrix Experience", "Type": "music", "wTeaser": "\nThe
+        Jimi Hendrix Experience was an American-English rock band that formed in Westminster,
+        London, in September 1966. Singer, songwriter, and guitarist Jimi Hendrix,
+        bassist Noel Redding, and drummer Mitch Mitchell comprised the group, which
+        was active until June 1969. During this time, they released three studio albums
+        and became one of the most popular acts in rock.  In April 1970, Hendrix,
+        Mitchell, and bassist Billy Cox performed and recorded until Hendrix''s death
+        on September 18, 1970.  This later trio was sometimes billed as the \"Jimi
+        Hendrix Experience\", but the title was never formalized.\nHighly influential
+        in the popularization of hard rock and psychedelic rock, the Experience was
+        best known for the skill, style, and charisma of their frontman, Jimi Hendrix.
+        All three of the band''s studio albums, Are You Experienced (1967), Axis:
+        Bold as Love (1967) and Electric Ladyland (1968), were featured in the top
+        100 of the Rolling Stone list of The 500 Greatest Albums of All Time, at positions
+        15, 82 and 54 respectively. In 1992, the Jimi Hendrix Experience was inducted
+        into the Rock and Roll Hall of Fame.\n", "wUrl": "http://en.wikipedia.org/wiki/The_Jimi_Hendrix_Experience",
+        "yUrl": "https://www.youtube-nocookie.com/embed/TLV4_xaYynY", "yID": "TLV4_xaYynY"},
+        {"Name": "The Zombies", "Type": "music", "wTeaser": "\n\nThe Zombies are an
+        English rock band formed in 1961 in St Albans and led by keyboardist and vocalist
+        Rod Argent and vocalist Colin Blunstone.\nThe group scored British and American
+        hits in 1964 with \"She''s Not There\". In the US two further singles, \"Tell
+        Her No\" in 1965 and \"Time of the Season\" in 1968, were also successful.
+        Their 1968 album Odessey and Oracle is ranked number 100 on Rolling Stone
+        Magazine''s list of the 500 Greatest Albums of All Time.Three members of the
+        band, Rod Argent, Paul Atkinson and Hugh Grundy, first came together to jam
+        in mid 1958 in St Albans, Hertfordshire, England. Argent wanted to form a
+        band and initially asked his elder cousin Jim Rodford to join as a bassist.
+        Rodford was in a successful local band, the Bluetones, at the time and so
+        declined, but he offered to help Argent (Rodford would later join in 2004
+        when the band reformed). Colin Blunstone and Paul Arnold joined the other
+        three to form the band in April 1961, while all five members were at school.",
+        "wUrl": "http://en.wikipedia.org/wiki/The_Zombies", "yUrl": "https://www.youtube-nocookie.com/embed/qzpPy9hJYA8",
+        "yID": "qzpPy9hJYA8"}, {"Name": "Help!", "Type": "movie", "wTeaser": "\n\nHelp!
+        is a 1965 British musical comedy-adventure film directed by Richard Lester,
+        starring the Beatles\u2013John Lennon, Paul McCartney, George Harrison and
+        Ringo Starr\u2014and featuring Leo McKern, Eleanor Bron, Victor Spinetti,
+        John Bluthal, Roy Kinnear and Patrick Cargill. The second film starring The
+        Beatles following Lester''s A Hard Day''s Night, Help! sees the group come
+        up against an evil cult. The soundtrack was released as an album, also called
+        Help!.\nThe film had its Royal World Premiere at the London Pavilion Theatre
+        in the West End of London on 29 July 1965 in the presence of Princess Margaret,
+        Countess of Snowdon and the Earl of Snowdon. While not reviewed at the time
+        with the same high level of admiration as their first film, the film is regarded
+        a half century later as being influential, including in the subsequent development
+        of  music videos.\n", "wUrl": "https://en.wikipedia.org/wiki/Help!_(film)",
+        "yUrl": "https://www.youtube-nocookie.com/embed/aT9eWGjLv6s", "yID": "aT9eWGjLv6s"}]}}'
     http_version: 
-  recorded_at: Sun, 04 Nov 2018 23:00:21 GMT
+  recorded_at: Tue, 06 Nov 2018 07:28:51 GMT
 recorded_with: VCR 4.0.0
