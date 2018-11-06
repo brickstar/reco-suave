@@ -38,6 +38,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'newrelic_rpm'
 gem 'sidekiq'
+gem 'bootstrap'
 gem 'jquery-rails'
 
 group :development, :test do
