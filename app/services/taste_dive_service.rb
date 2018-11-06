@@ -5,7 +5,7 @@ class TasteDiveService
   end
 
   def raw_recommendations(params)
-    get_url("/api/similar?q=#{@params}&k=#{ENV["TASTE_DIVE_KEY"]}&verbose=1&limit=10")
+    get_url("/api/similar?q=#{@params}&k=#{ENV["TASTE_DIVE_KEY"]}&verbose=1")
   end
 
   private
