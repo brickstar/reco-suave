@@ -3,3 +3,9 @@
   <%= text_field_tag(:q, "Bands, Movies, TV Shows, Authors, or Games...", id: "recommendation-input-field") %>
   <%= submit_tag("Search") %>
 <% end %>
+
+<script type="text/javascript">
+  $('input, #recommdation-input-field').focus(function(){
+    $(this).removeAttr('value');
+  });
+</script>
