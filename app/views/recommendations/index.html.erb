@@ -1,9 +1,7 @@
 <section class="recos-container">
-  <div class=""></div>
-  <div class=""></div>
-    <% if !@recommendations.empty? %>
-    <div class="recos">
-      <% @recommendations.each do |reco| %>
+  <% if !@recommendations.empty? %>
+  <div class="recos">
+    <% @recommendations.each do |reco| %>
       <div class="card-container">
         <div class="mm-card shadow4 shadow6h bOWhite1">
           <h3 class="reco-name"><%= reco.name %></h3>
@@ -13,10 +11,10 @@
           </div>
         </div>
       </div>
-        <% end %>
-      </div>
-    <% else %>
-      <p>Returned Nothing</p>
     <% end %>
+    </div>
+  <% else %>
+    <p>Returned Nothing</p>
+  <% end %>
   <%= link_to "make another search", root_path %>
 </section>
