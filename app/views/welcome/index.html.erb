@@ -2,8 +2,8 @@
   <div class="card-container-form">
     <div class="mm-card shadow4 shadow6h bOWhite1 form-text">
       <%= form_tag("/recommendations", method: "get", class: "recommendations-label") do %>
-        <%= label_tag(:q, "Get Recommendations") %>
-        <%= text_field_tag(:q, "Bands, Movies, TV Shows, Authors, or Games...", id: "recommendation-input-field") %>
+        <%= label_tag(:q, "Get Recommendations", class: "recommendations-label") %>
+        <%= text_field_tag(:q, "Bands, Movies, TV Shows, Authors, or Games...", id: "recommendation-input-field") %><br>
         <%= submit_tag("Search", class: "input-button") %>
       <% end %>
     </div>
