@@ -2,6 +2,7 @@
   <% if !@recommendations.empty? %>
   <div class="recos">
     <% @recommendations.each do |reco| %>
+    <% cache reco do %>
       <div class="card-container">
         <div class="mm-card shadow4 shadow6h bOWhite1">
           <h3 class="reco-name"><%= reco.name %></h3>
@@ -11,6 +12,7 @@
           </div>
         </div>
       </div>
+    <% end %>
     <% end %>
     </div>
   <% else %>

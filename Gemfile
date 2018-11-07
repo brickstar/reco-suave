@@ -37,6 +37,8 @@ gem 'pry'
 gem 'faraday'
 gem 'figaro'
 gem 'newrelic_rpm'
+gem "redis", "~> 4.0"
+gem 'hiredis'
 gem 'sidekiq'
 gem 'bootstrap'
 gem 'jquery-rails'

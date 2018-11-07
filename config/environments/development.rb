@@ -1,4 +1,6 @@
 Rails.application.configure do
+  config.cache_store = :redis_cache_store, {url: "redis://192.168.0.10:6379/0"}
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -22,7 +24,7 @@ Rails.application.configure do
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
     }
   else
-    config.action_controller.perform_caching = false
+    config.action_controller.perform_caching = true
 
     config.cache_store = :null_store
   end
