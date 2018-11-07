@@ -4,7 +4,35 @@ p {
   margin: 0;
 }
 
+.form-text {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.recommendations-label {
+  font-size: 26px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.input-button {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+#recommendation-input-field {
+  height: 30px !important;
+  font-size: 13px !important;
+  width: 350px !important;
+  font-family: $logo-font;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
 .recos-container {
+  font-family: $logo-font;
+  background: url(<%= asset_path("clean-laser.png") %>) no-repeat center center fixed;
+}
+
+.recos-container-form {
+  font-family: $logo-font;
   background: url(<%= asset_path("clean-laser.png") %>) no-repeat center center fixed;
 }
 
@@ -57,6 +85,15 @@ p {
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+}
+
+.card-container-form {
+  height: 800px;
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0px;
