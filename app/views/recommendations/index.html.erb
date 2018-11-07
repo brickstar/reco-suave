@@ -14,7 +14,9 @@
     <% end %>
     </div>
   <% else %>
-    <p>Returned Nothing</p>
+  <div class="recos-container-sad-path">
+    <p class="invalid-message">Your search did not return any results. Try formatting your search differently, i.e. 'the beatles', or 'monopoly'.</p>
   <% end %>
-  <%= link_to "make another search", root_path %>
+  <%= link_to "make another search", root_path, class: "make-another-search-link" %>
+</div>
 </section>
