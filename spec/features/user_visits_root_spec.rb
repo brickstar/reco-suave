@@ -18,11 +18,9 @@ describe "user visits root path" do
 
       expect(current_path).to eq(recommendations_path)
       within('.reco-recommends') do
-        expect(page).to have_content("Reco Recommends:")
+        expect(page).to have_content("Reco Recommends")
       end
-      expect(page).to have_content("Artist:")
-      expect(page).to have_content("Reco Type:")
-      expect(page).to have_link("wiki page")
+      expect(page).to have_link("wiki")
     end
   end
 end

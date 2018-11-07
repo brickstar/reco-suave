@@ -1,12 +1,13 @@
-  <h1 class="reco-recommends">Reco Recommends: </h1>
+<section class="recos-container">
+  <div class=""></div>
+  <div class=""></div>
     <% if !@recommendations.empty? %>
     <div class="recos">
       <% @recommendations.each do |reco| %>
       <div class="card-container">
         <div class="mm-card shadow4 shadow6h bOWhite1">
-          <h3>Artist: <%= reco.name %></h3>
-          Reco Type: <%= reco.type %><br>
-          <%= link_to "wiki page", reco.wiki_url %><br>
+          <h3 class="reco-name"><%= reco.name %></h3>
+          <p class="wiki-link"><%= link_to "wiki", reco.wiki_url %></p>
           <div class="video-box">
             <iframe class="mm-card-vid" src='https://www.youtube.com/embed/<%= reco.youtube_id %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe><br>
           </div>
@@ -18,3 +19,4 @@
       <p>Returned Nothing</p>
     <% end %>
   <%= link_to "make another search", root_path %>
+</section>
