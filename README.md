@@ -13,7 +13,7 @@ To run this application locally;
 ### Tests
 Testing for this application can be run running ```$ rspec```
 ### How to Contribute
-If you would like to contribute to this application - feel free to open a pull request. Please do your best to be a nice person when doing so!
+If you would like to contribute to this application - feel free to open a pull request. Please do your best to be a nice person when doing so! Agile board can be found [here](https://www.pivotaltracker.com/n/projects/2223003)
 ### Tech Stack
 This app was built with ```Rails 5.2.1``` and ```Ruby 2.4.1```
 
