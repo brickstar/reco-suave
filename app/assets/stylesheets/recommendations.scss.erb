@@ -10,6 +10,20 @@ p {
   align-items: center !important;
 }
 
+.invalid-message {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  font-size: 30px;
+  color: black;
+  margin: 70px;
+}
+
+.make-another-search-link {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  font-size: 30px;
+  color: white;
+  padding-top: 80px;
+}
+
 .recommendations-label {
   margin-bottom: 20px !important;
   font-size: 26px;
@@ -33,6 +47,20 @@ p {
 .recos-container {
   font-family: $logo-font;
   background: url(<%= asset_path("clean-laser.png") %>) no-repeat center center fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recos-container-sad-path {
+  font-family: $logo-font;
+  background: url(<%= asset_path("clean-laser.png") %>) no-repeat center center fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
 }
 
 .recos-container-form {
